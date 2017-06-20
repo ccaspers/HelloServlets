@@ -18,8 +18,11 @@ public class GetAndPostServlet extends HttpServlet {
 			"	</head>",
 			"	<body>",
 			"		<p>Method was: %s</p>",
+			"		<form method=\"GET\">", // kein Attribut 'action' definiert, abschicken an aktuelle URL im Browser
+			"			<input type=\"submit\" value=\"Get!\">",
+			"		</form>",
 			"		<form method=\"POST\">", // kein Attribut 'action' definiert, abschicken an aktuelle URL im Browser
-			"			<input type=\"submit\" value=\"Do the Post!\">",
+			"			<input type=\"submit\" value=\"Post!\">",
 			"		</form>",
 			"	</body>",
 			"</html>"
